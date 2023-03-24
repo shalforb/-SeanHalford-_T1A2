@@ -1,0 +1,100 @@
+@import "../defaults/color";
+@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body { 
+    background-color: $background-color;
+}
+
+main {
+    color: $primary-color;
+}
+
+header {
+    // border: solid $primary-color 2px;
+    text-align: center;
+    color: $primary-color;
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 12px;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    border: solid $primary-color 2px;
+    border-radius: 50%;
+    padding:10px;
+    margin-right: 20px;
+  }
+
+.nav-items {
+    // border: solid $primary-color 2px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+  }
+
+.header-image {
+    // border: solid $primary-color 2px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+
+    img {
+        width:250px;
+        border: solid $primary-color 2px;
+        border-radius: 50%;
+    }
+}
+
+.about {
+    // border: solid $primary-color 2px;
+    margin: 0px 50px 50px 50px;
+
+    h1 {
+        font-size: 40px;
+        font-family: Codystar, sans-serif;
+        font-weight: 200;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-family: Archivo, sans-serif;
+        font-weight: 200;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: Archivo, sans-serif;
+        font-weight: 200;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            i {
+                color: $primary-color;
+            }
+            
+        }
+
+    }
+    // .signature {
+    //     color: $primary-color;
+    //     font-family: archivo, sans-serif;
+    //     font-weight: 100;
+    //     opacity: 0.5;
+    //     margin: 10px;
+
+    // }
+}

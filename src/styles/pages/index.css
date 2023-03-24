@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+body {
+  background-color: #281BC0;
+}
+
+main {
+  color: #F4FFAF;
+}
+
+header {
+  text-align: center;
+  color: #F4FFAF;
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  border: solid #F4FFAF 2px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.header-image {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 20px 20px;
+}
+.header-image img {
+  width: 250px;
+  border: solid #F4FFAF 2px;
+  border-radius: 50%;
+}
+
+.about {
+  margin: 0px 50px 50px 50px;
+}
+.about h1 {
+  font-size: 40px;
+  font-family: Codystar, sans-serif;
+  font-weight: 200;
+}
+.about h2 {
+  font-size: 30px;
+  font-family: Archivo, sans-serif;
+  font-weight: 200;
+}
+.about p {
+  font-size: 16px;
+  font-family: Archivo, sans-serif;
+  font-weight: 200;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social-media a i {
+  color: #F4FFAF;
+}/*# sourceMappingURL=index.css.map */
