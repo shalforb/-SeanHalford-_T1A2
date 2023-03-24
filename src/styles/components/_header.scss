@@ -1,0 +1,25 @@
+header {
+    // border: solid $primary-color 2px;
+    text-align: center;
+    color: $primary-color;
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 12px;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        border: solid $primary-color 2px;
+        border-radius: 50%;
+        padding:10px;
+        margin-right: 20px;
+      }
+    
+    .nav-items {
+        // border: solid $primary-color 2px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding:10px;
+      }
+}
