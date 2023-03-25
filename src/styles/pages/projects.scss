@@ -1,0 +1,21 @@
+@import "../defaults/color";
+@import "../defaults/breakpoint";
+@import "../defaults/fonts";
+@import "../components/header";
+@import "../components/header-logo";
+@import "../components/footer";
+@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body { 
+    background-color: $background-color;
+
+}
+
+main {
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

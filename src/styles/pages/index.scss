@@ -9,11 +9,9 @@
 
 body { 
     background-color: $background-color;
-
 }
 
 main {
-    
     color: $primary-color;
 }
 
@@ -24,7 +22,7 @@ main {
     margin: 20px 20px 20px 20px;
 
     img {
-        width:250px;
+        width:200px;
         border: solid $primary-color 2px;
         border-radius: 50%;
     }
@@ -53,6 +51,7 @@ main {
         justify-content: center;
         align-items: center;
         margin-top: 25px;
+        margin-bottom: 25px;
         .header-image {
             width: 50%;
             order: +1;
@@ -69,10 +68,15 @@ main {
             h2 {
                 font-size: 42px;
             }
+            p {
+                font-size: 18px;
+                line-height: 2.5
+            }
         }    
     }
     header {
         margin-top: 50px;
         font-size: 16px;
     }
+    
 }

@@ -21,10 +21,16 @@ header a:hover {
   cursor: pointer;
   opacity: 50%;
 }
+header a {
+  color: inherit;
+  text-decoration: none;
+}
 
 footer {
   text-align: center;
-  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 20px;
 }
 footer .social-media {
   display: flex;
@@ -34,6 +40,16 @@ footer .social-media a i {
   color: #F4FFAF;
 }
 
+@media screen and (min-width: 650px) {
+  .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  i {
+    font-size: 24px;
+  }
+}
 body {
   background-color: #281BC0;
 }
@@ -48,7 +64,7 @@ main {
   margin: 20px 20px 20px 20px;
 }
 .header-image img {
-  width: 250px;
+  width: 200px;
   border: solid #F4FFAF 2px;
   border-radius: 50%;
 }
@@ -68,9 +84,11 @@ main {
   font-weight: 200;
 }
 .about p {
-  font-size: 16px;
+  font-size: 14px;
   font-family: Archivo, sans-serif;
   font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
 
 @media screen and (min-width: 650px) {
@@ -79,6 +97,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    margin-bottom: 25px;
   }
   main .header-image {
     width: 50%;
@@ -96,6 +115,10 @@ main {
   }
   main .about h2 {
     font-size: 42px;
+  }
+  main .about p {
+    font-size: 18px;
+    line-height: 2.5;
   }
   header {
     margin-top: 50px;

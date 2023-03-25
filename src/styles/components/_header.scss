@@ -8,6 +8,7 @@ header {
     padding:20px;
     display: flex;
     justify-content: space-between;
+    
     .nav-items {
         // border: solid $primary-color 2px;
         width: 100%;
@@ -15,8 +16,14 @@ header {
         justify-content: space-around;
         padding:10px;
       }
+
       a:hover {
         cursor:pointer;
         opacity: 50%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 }
