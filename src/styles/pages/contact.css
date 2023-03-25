@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+header {
+  text-align: center;
+  color: #F4FFAF;
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+header a:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+header .logo {
+  border: solid #F4FFAF 2px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social-media a i {
+  color: #F4FFAF;
+}
+
+body {
+  background-color: #281BC0;
+}
+
+main {
+  color: #F4FFAF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: Archivo, sans-serif;
+  font-weight: 200;
+}
+
+p {
+  font-size: 16px;
+  font-family: Archivo, sans-serif;
+  font-weight: 200;
+}
+
+form {
+  margin: 30px;
+}
+form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  padding: 5px;
+}
+form .form-elements label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+form .form-elements .form-input {
+  border: #F4FFAF solid 1px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.2rem;
+}
+form .form-elements .form-input:not(.form-textarea) {
+  height: 32px;
+}
+form .form-elements .form-input:focus {
+  box-shadow: 0 0 8px 3px #F4FFAF;
+}
+form .btn-div {
+  text-align: center;
+}
+form .btn-div #submit {
+  height: 40px;
+  min-width: 120px;
+  background-color: #F4FFAF;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+form .btn-div:hover {
+  cursor: pointer;
+  background-color: rgba(69, 167, 197, 0.5647058824);
+}
+
+@media screen and (min-width: 650px) {
+  .form-1 {
+    display: flex;
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=contact.css.map */

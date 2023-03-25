@@ -1,6 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+header {
+  text-align: center;
+  color: #F4FFAF;
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+header a:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
 footer {
   text-align: center;
   padding: 20px;
@@ -19,22 +40,6 @@ body {
 
 main {
   color: #F4FFAF;
-}
-
-header {
-  text-align: center;
-  color: #F4FFAF;
-  font-family: Inter;
-  font-weight: 200;
-  font-size: 12px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-header .nav-items {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
 }
 
 .header-image {
@@ -68,7 +73,7 @@ header .nav-items {
   font-weight: 200;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   main {
     display: flex;
     justify-content: center;
@@ -76,7 +81,15 @@ header .nav-items {
     margin-top: 25px;
   }
   main .header-image {
+    width: 50%;
     order: 1;
+  }
+  main .header-image img {
+    min-width: 80%;
+    max-width: 100%;
+  }
+  main .about {
+    width: 50%;
   }
   main .about h1 {
     font-size: 48px;
