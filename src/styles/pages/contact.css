@@ -1,13 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+body {
+  background-color: #231E20;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 header {
   text-align: center;
-  color: #F4FFAF;
-  font-family: Inter;
+  color: #ffffff;
+  font-family: "circular-std", sans-serif;
   font-weight: 200;
   font-size: 12px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -27,25 +37,34 @@ header a {
 }
 
 header .logo {
-  border: solid #F4FFAF 2px;
+  border: solid #ffffff 2px;
   border-radius: 50%;
   padding: 10px;
   margin-right: 20px;
   text-align: center;
 }
 
+body {
+  background-color: #231E20;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 footer {
   text-align: center;
   bottom: 0;
-  width: 100%;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 footer .social-media {
   display: flex;
   justify-content: space-around;
 }
 footer .social-media a i {
-  color: #F4FFAF;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 650px) {
@@ -59,11 +78,11 @@ footer .social-media a i {
   }
 }
 body {
-  background-color: #281BC0;
+  background-color: #231E20;
 }
 
 main {
-  color: #F4FFAF;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,7 +106,7 @@ h2 {
 
 p {
   font-size: 14px;
-  font-family: Archivo, sans-serif;
+  font-family: "circular std", sans-serif;
   font-weight: 200;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -108,9 +127,9 @@ form .form-elements label {
   margin-bottom: 10px;
 }
 form .form-elements .form-input {
-  border: #F4FFAF solid 1px;
+  border: #ffffff solid 1px;
   border-radius: 4px;
-  background-color: #281BC0;
+  background-color: #231E20;
   outline: none;
   font-size: 1.2rem;
 }
@@ -121,13 +140,13 @@ form .btn-div {
   text-align: center;
 }
 form .btn-div #submit {
-  color: #F4FFAF;
+  color: #ffffff;
   height: 40px;
   min-width: 120px;
   border-radius: 25px;
-  border: #F4FFAF solid 1px;
+  border: #ffffff solid 1px;
   outline: none;
-  background-color: #281BC0;
+  background-color: #231E20;
 }
 form .btn-div #submit:hover {
   cursor: pointer;

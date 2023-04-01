@@ -1,16 +1,14 @@
 header {
-    // border: solid $primary-color 2px;
     text-align: center;
     color: $primary-color;
-    font-family: Inter;
+    font-family: 'circular-std', sans-serif;
     font-weight: 200;
     font-size: 12px;
-    padding:20px;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     
     .nav-items {
-        // border: solid $primary-color 2px;
         width: 100%;
         display: flex;
         justify-content: space-around;

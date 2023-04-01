@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+@import url(https://fonts.cdnfonts.com/css/circular-std);
 header {
   text-align: center;
-  color: #F4FFAF;
-  font-family: Inter;
+  color: #ffffff;
+  font-family: "circular-std", sans-serif;
   font-weight: 200;
   font-size: 12px;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -29,15 +30,14 @@ header a {
 footer {
   text-align: center;
   bottom: 0;
-  width: 100%;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 footer .social-media {
   display: flex;
   justify-content: space-around;
 }
 footer .social-media a i {
-  color: #F4FFAF;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 650px) {
@@ -51,44 +51,59 @@ footer .social-media a i {
   }
 }
 body {
-  background-color: #281BC0;
+  background-color: #231E20;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  background-image: url("../../../docs/images/bg-shape-1.png");
+  background-size: cover;
 }
 
 main {
-  color: #F4FFAF;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header-image {
-  display: flex;
+  display: none;
   justify-content: center;
-  margin: 20px 20px 20px 20px;
+  margin: 40px;
 }
 .header-image img {
-  width: 200px;
-  border: solid #F4FFAF 2px;
+  width: 300px;
+  border: solid #ffffff 2px;
   border-radius: 50%;
+  background-image: url("../../../docs/images/green_bg.png");
+  background-size: contain;
 }
 
-.about {
-  margin: 0px 50px 50px 50px;
+.name {
+  margin: 20px;
+  text-align: center;
 }
-.about h1 {
-  font-size: 40px;
-  font-family: Codystar, sans-serif;
-  font-weight: 200;
+.name h1 {
+  font-size: 48px;
+  font-family: "Circular Std", sans-serif;
+  font-weight: 500;
   margin: 20px 0px;
 }
-.about h2 {
-  font-size: 30px;
-  font-family: Archivo, sans-serif;
-  font-weight: 200;
+
+.title {
+  margin: 20px;
+  text-align: center;
 }
-.about p {
-  font-size: 14px;
-  font-family: Archivo, sans-serif;
-  font-weight: 200;
-  letter-spacing: 1px;
-  line-height: 1.2;
+.title h1 {
+  font-size: 32px;
+  font-family: "Circular Std", sans-serif;
+  margin: 20px 0px;
 }
 
 @media screen and (min-width: 650px) {
@@ -101,27 +116,19 @@ main {
   }
   main .header-image {
     width: 50%;
-    order: 1;
   }
   main .header-image img {
     min-width: 80%;
     max-width: 100%;
   }
-  main .about {
-    width: 50%;
+  main .name h1 {
+    font-size: 64px;
   }
-  main .about h1 {
+  main .title h1 {
     font-size: 48px;
   }
-  main .about h2 {
-    font-size: 42px;
-  }
-  main .about p {
-    font-size: 18px;
-    line-height: 2.5;
-  }
   header {
-    margin-top: 50px;
+    padding: 30px;
     font-size: 16px;
   }
 }/*# sourceMappingURL=index.css.map */

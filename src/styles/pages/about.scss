@@ -2,6 +2,7 @@
 @import "../defaults/breakpoint";
 @import "../defaults/fonts";
 @import "../components/header";
+@import "../components/body";
 @import "../components/header-logo";
 @import "../components/footer";
 @import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
@@ -9,7 +10,8 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 body { 
-    background-color: $background-color;
+    background-image: url('../../../docs/images/bg-shape-2.png');
+    // background-size: cover;
 }
 
 main {
@@ -24,7 +26,7 @@ main {
 
     img {
         width:200px;
-        border: solid $primary-color 2px;
+        // border: solid $primary-color 2px;
         border-radius: 50%;
     }
 }
@@ -54,6 +56,7 @@ main {
         margin-top: 25px;
         margin-bottom: 25px;
         .header-image {
+            visibility: hidden;
             width: 50%;
             order: +1;
             img {
@@ -80,4 +83,10 @@ main {
         font-size: 16px;
     }
     
+}
+
+@media screen and (min-width: $large) {
+    body {
+        background-size: 4000px;
+    }
 }

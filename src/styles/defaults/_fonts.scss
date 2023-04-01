@@ -1,8 +1,16 @@
 @mixin h1-font-1 {
-    font-size: 40px;
-    font-family: Codystar, sans-serif;
-    font-weight: 200;
+    font-size: 48px;
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 500;
     margin: 20px 0px;
+    // mix-blend-mode: difference;
+}
+
+@mixin h1-font-2 {
+    font-size: 32px;
+    font-family: 'Circular Std', sans-serif;
+    margin: 20px 0px;
+    // mix-blend-mode: difference;
 }
 
 @mixin h2-font-1 {
@@ -13,7 +21,7 @@
 
 @mixin p-font-1 {
     font-size: 14px;
-    font-family: Archivo, sans-serif;
+    font-family: 'circular std', sans-serif;
     font-weight: 200;
     letter-spacing: +1px;
     line-height: 1.2;
