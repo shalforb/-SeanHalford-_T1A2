@@ -5,18 +5,98 @@
 @import "../components/header";
 @import "../components/header-logo";
 @import "../components/footer";
-@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 body { 
     background-color: $background-color;
+    background-image: url('../../../docs/images/dot.png');
+    background-size: 1600px;
 
 }
+
+
 
 main {
     color: $primary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
+    margin-top: 0px;
+
+    aside {
+        width: 100%;
+
+        h2 {
+            font-size: 36px;
+            margin-left: 10px;
+        }
+
+        li {
+            font-size: 24px;
+            list-style: square;
+            line-height: 2em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+    article {
+
+        background-color: rgba(0,0,0,.5);
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+
+        img {
+            display: block;    
+            width: 80px;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    aside {
+        li {
+            display: inline-block;
+            a {
+                font-size: 18px;
+            }
+        }    
+    }
+
+    article {
+        img {
+            width: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .seperator,
+    .seperator-2 {
+        display: none;
+    }
+
+    article {
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (min-width: $large) {
+    .seperator-2 {
+        display: none;
+    }
+
+    article {
+        img {
+            width: 120px;
+        }
+    }
 }

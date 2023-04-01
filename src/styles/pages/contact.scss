@@ -4,14 +4,13 @@
 @import "../components/body";
 @import "../components/header";
 @import "../components/header-logo";
-@import "../components/body";
 @import "../components/footer";
-@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 body { 
     background-color: $background-color;
+    background-image: url('../../../docs/images/disk.png');
+    background-size: 1500px;
+    background-position: left;
 
 }
 
@@ -22,17 +21,6 @@ main {
     align-items: center;
 }
 
-.header-image {
-    // border: solid $primary-color 2px;
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-
-    img {
-        width: 100px;
-        border-radius: 50%;
-    }
-}
 
 h2 {
     @include h2-font-1;
@@ -93,27 +81,37 @@ form {
 
 @media screen and (min-width: $medium) {
 
-    .header-image {
-        margin: 10px;
-        img {
-            width: 150px;
-        }
+    body {
+        background-size: 1500px;
     }
 
     .form-1 {
         display: flex;
-        flex-direction: row;   
-        }
+        flex-direction: row;  
+    } 
 
-    header {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-    h1 {
-            font-size: 48px;
-        }
     h2 {
-            font-size: 42px;
-        }
+        font-size: 56px;
+    }
 
+    p {
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (min-width: $large) {
+
+    body {
+        background-size: 2000px;
+    }
+
+    h2 {
+        font-size: 80px;
+        margin: 50px;
+    }
+    
+    p {
+        font-size: 32px;
+    }
 }

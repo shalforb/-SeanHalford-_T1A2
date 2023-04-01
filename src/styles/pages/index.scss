@@ -4,10 +4,6 @@
 @import "../components/header";
 @import "../components/footer"; 
 @import "../components/body";
-@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
-@import url(https://fonts.cdnfonts.com/css/circular-std);
 
 body {
     background-image: url('../../../docs/images/bg-shape-1.png');
@@ -17,28 +13,13 @@ body {
 
 main {
     color: $primary-color;
-    // height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.header-image {
-    // border: solid $primary-color 2px;
-    display: none;
-    justify-content: center;
-    margin: 40px;
-
-    img {
-        width: 300px;
-        border: solid $primary-color 2px;
-        border-radius: 50%;
-        background-image: url('../../../docs/images/green_bg.png');
-        background-size: contain;
-    }
-}
-
-.name {
+.name,
+.title {
     // border: solid $primary-color 2px;
     margin: 20px;
     text-align: center;
@@ -46,45 +27,57 @@ main {
     h1 {
         @include h1-font-1;
     }
-}
-
-.title {
-    margin: 20px;
-    text-align: center;
-
-    h1 {
-        @include h1-font-2;
+    h2 {
+        @include h2-font-1;
     }
 }
 
 @media screen and (min-width: $medium) {
+
+    body {
+        background-size: 1500px;
+    }
+
     main {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 25px;
         margin-bottom: 25px;
-        .header-image {
-            width: 50%;
-            img {
-                min-width:80%;
-                max-width: 100%;
-            }
+    }
+
+    .name {
+        h1 {
+            font-size: 64px;
         }
-        .name {
-            h1 {
-                font-size: 64px;
-            }
-        }    
-        .title {
-            h1 {
-                font-size: 48px;
-            }
-        }  
-    }
-    header {
-        padding: 30px;
-        font-size: 16px;
-    }
+    }    
+    .title {
+        h2 {
+            font-size: 48px;
+        }
+    }  
     
+}
+   
+    
+
+
+@media screen and (min-width: $large) {
+
+
+
+    body {
+        background-size: 1800px;
+    }
+
+    .name {
+        h1 {
+            font-size: 80px;
+        }
+    }    
+    .title {
+        h2 {
+            font-size: 64px;
+        }
+    }  
 }

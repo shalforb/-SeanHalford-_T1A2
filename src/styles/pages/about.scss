@@ -5,35 +5,21 @@
 @import "../components/body";
 @import "../components/header-logo";
 @import "../components/footer";
-@import url(https://fonts.googleapis.com/css?family=Archivo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-@import url(https://fonts.googleapis.com/css?family=Codystar:300,regular);
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 body { 
-    background-image: url('../../../docs/images/bg-shape-2.png');
-    // background-size: cover;
+    background-image: url('../../../docs/images/line.png');
+    background-size: 1500px;
 }
 
 main {
     color: $primary-color;
-}
-
-.header-image {
-    // border: solid $primary-color 2px;
-    display: flex;
-    justify-content: center;
-    margin: 20px 20px 20px 20px;
-
-    img {
-        width:200px;
-        // border: solid $primary-color 2px;
-        border-radius: 50%;
-    }
+    width: 80%;
 }
 
 .about {
     // border: solid $primary-color 2px;
-    margin: 0px 50px 50px 50px;
+    
+    margin: 0px 20px 20px 20px;
 
     h1 {
         @include h1-font-1;
@@ -45,27 +31,29 @@ main {
 
     p {
         @include p-font-1;
+        
+        
+    }
+}
+
+@media screen and (min-width: 450px) {
+    body {
+        background-size: 2000px;
+    }
+    main {
+        width: 65%;
     }
 }
 
 @media screen and (min-width: $medium) {
+    body {
+        background-size: 2500px;
+    }
+   
     main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        .header-image {
-            visibility: hidden;
-            width: 50%;
-            order: +1;
-            img {
-                min-width:80%;
-                max-width: 100%;
-            }
-        }
+        width: 60%;
         .about {
-            width: 50%;
+            margin-left: 50px;
             h1 {
                 font-size: 48px;
             }
@@ -74,19 +62,39 @@ main {
             }
             p {
                 font-size: 18px;
-                line-height: 2.5
+                // background-color: rgba(1,0,0,.5);
+
             }
         }    
-    }
-    header {
-        margin-top: 50px;
-        font-size: 16px;
     }
     
 }
 
+@media screen and (min-width: 850px) {
+    body {
+        background-size: 3000px;
+    }
+    main {
+        width: 55%;
+    }
+}
+
+
+
 @media screen and (min-width: $large) {
     body {
-        background-size: 4000px;
+        background-size: 3500px;
+        background-position: left;
+    }
+    main {
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
+        width: 45%;
+        .about {
+            h1 {
+                font-size: 80px;
+            }
+        }
     }
 }
