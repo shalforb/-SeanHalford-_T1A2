@@ -32,7 +32,7 @@ header a:hover {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) {
   header {
     padding: 20px;
     font-size: 24px;
@@ -87,7 +87,7 @@ footer .social-media a i {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) {
   footer {
     padding: 30px;
   }
@@ -164,7 +164,7 @@ main {
     width: 55%;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1024px) {
   body {
     background-size: 3500px;
     background-position: left;

@@ -42,6 +42,11 @@ main {
 }
 
 @media screen and (min-width: $medium) {
+    
+    body {
+        background-size: 1900px;
+    }
+    
     .projects {
         a {
             font-size: 80px;
@@ -51,4 +56,24 @@ main {
             }
         }
     }
+}
+
+@media screen and (min-width: $large) {
+    
+    body {
+        background-size: 2000px;
+        background-position: left;
+    }
+    
+    .projects {
+        line-height: 2.8em;
+        a {
+            font-size: 42px;
+
+            &:hover {
+                font-size: 48px;
+            }
+        }
+    }
+
 }
